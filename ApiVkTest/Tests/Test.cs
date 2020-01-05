@@ -1,6 +1,6 @@
-using MockServer;
 using NUnit.Framework;
 using ApiVkTest.Model;
+using ApiVkTest.Services;
 using Tests.Repositories;
 
 namespace ApiVkTest.Tests
@@ -12,7 +12,8 @@ namespace ApiVkTest.Tests
         {
 
             IUsersRepository userRepository = new UsersRepositoryMock();
-            User user = userRepository.GetUserById("86031446");
+            UserService userService = new UserService(userRepository);
+            User user = userService.GetUserById("86031446");
             
             Assert.AreEqual("Ирина", user.first_name);
             Assert.AreEqual("Пересыпкина",user.last_name);
@@ -28,8 +29,10 @@ namespace ApiVkTest.Tests
         [Test]
         public void GetGroupById()
         {
+            
             IGroupsRepository groupRepository = new GroupsRepositoryVk();
-            Group group = groupRepository.GetGroupById("1");
+            GroupService groupService = new GroupService(groupRepository);
+            Group group = groupService.GetGroupById("1");
             
             Assert.AreEqual("ВКонтакте API", group.name);
             
