@@ -59,14 +59,14 @@ namespace MockServer
         {
             switch (request) //выбирает ответ
             {
-                case "/test":
+                case "/":
                     string text = "Hello, world!";
                     SendMessageToClient(text, response);
                     break;
-                case "/method/users/get/7438294":
+                case "/method/users/get/86031446":
                     User user = new User()
                     {
-                        id = "7438294",
+                        id = "86031446",
                         first_name = "Ирина",
                         last_name = "Пересыпкина",
                         is_closed = false

@@ -12,11 +12,8 @@ namespace ApiVkTest.WebClient
         {
             // requestString = baseURL + requestString;
             
-            WebRequest request = WebRequest.Create(requestString); 
-            request.Headers.Set("Authorization", "Bot NjU5NzkwMzA4NTA2MzM3MzAw.XgYpYA.7Oz5qaLQT2vJk9Zi8LAhfOup4eA");
-
+            WebRequest request = WebRequest.Create(requestString);
             request.Method = method;
-
             request.Credentials = CredentialCache.DefaultCredentials;
             
             WebResponse response = request.GetResponse(); 

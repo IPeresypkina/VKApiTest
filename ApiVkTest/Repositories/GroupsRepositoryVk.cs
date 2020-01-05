@@ -7,7 +7,7 @@ namespace Tests.Repositories
     public class GroupsRepositoryVk: IGroupsRepository
     {
         private string accessToken =
-            "e4dd7cea02356d1d975085be3d5234a260f2f5a32e3aac8084cc742583532728668a7850edc8d0afc1495";
+            "f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce";
 
         private string url = "https://api.vk.com/method/";
         

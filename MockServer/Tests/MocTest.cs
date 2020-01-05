@@ -22,7 +22,7 @@ namespace MockServer.Tests
         public void ClientConnectedToServerAndReceiveMessage() //подключение клиента и получение сообщений
         {
             //Делает запрос к созданию универсальному идентификатору ресурса (URI)
-            WebRequest request = WebRequest.Create("http://localhost:8888/");
+            WebRequest request = WebRequest.Create("http://localhost:8080/");
             request.Credentials = CredentialCache.DefaultCredentials;
             WebResponse response = request.GetResponse(); //есть ли ответ с сервера
             Stream stream = response.GetResponseStream(); //получмть поток вывода клиенту который присоеденился 

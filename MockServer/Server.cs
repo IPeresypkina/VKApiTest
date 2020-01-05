@@ -19,8 +19,8 @@ namespace MockServer
         {
             HttpListener listener = new HttpListener();
             // установка адресов прослушки
-            listener.Prefixes.Add("http://localhost:8888/connection/");
-            listener.Prefixes.Add("http://localhost:8888/");
+            listener.Prefixes.Add("http://localhost:8080/connection/");
+            listener.Prefixes.Add("http://localhost:8080/");
             
             listener.Start();
             Console.WriteLine("Ожидание подключений...");
@@ -63,7 +63,16 @@ namespace MockServer
                     string text = "Hello, world!";
                     SendMessageToClient(text, response);
                     break;
-
+                case "/method/users/get/86031446":
+                    User user = new User()
+                    {
+                        id = "86031446",
+                        first_name = "Ирина",
+                        last_name = "Пересыпкина",
+                        is_closed = false
+                    };
+                    SendMessageToClient(user,response);
+                    break;
             }
         }
     }
