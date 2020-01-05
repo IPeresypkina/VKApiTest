@@ -24,5 +24,19 @@ namespace ApiVkTest.Tests
             Assert.AreEqual("Пересыпкина",user.last_name);
             
         }
+        
+        [Test]
+        public void GetGroupById()
+        {
+            IGroupsRepository groupRepository = new GroupsRepositoryVk();
+            Group group = groupRepository.GetGroupById("1");
+            
+            Assert.AreEqual("ВКонтакте API", group.name);
+            
+            groupRepository = new GroupsRepositoryMock();
+            group = groupRepository.GetGroupById("1");
+            
+            Assert.AreEqual("ВКонтакте API", group.name);
+        }
     }
 }
