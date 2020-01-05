@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[feature] add mock serve">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/ApiVkTest.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Model/Group.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Model/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryVk.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/IGroupsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/IUsersRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/WebClient/WebClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/ApiVkTest.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/ApiVkTest.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/ApiVkTest.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/ApiVkTest.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MockServer/Models/Group.cs" afterDir="false" />
+    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[feature] add mock serve and vkapi">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +143,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -181,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578246396904</updated>
-      <workItem from="1578246398577" duration="4761000" />
+      <workItem from="1578246398577" duration="6238000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] add mock serve">
       <created>1578251153257</created>
@@ -190,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578251153257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feature] add mock serve and vkapi">
+      <created>1578251381579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578251381579</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,29 +178,34 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feature] add mock serve" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] add mock serve" />
+    <MESSAGE value="[feature] add mock serve and vkapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] add mock serve and vkapi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="144" y="79" key="DiffContextDialog" timestamp="1578251259735">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1578251259735" />
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1578250880235">
+    <state x="587" y="350" width="368" height="199" key="Github.ShareDialog" timestamp="1578252343320">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578250880235" />
-    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1578250880234">
+    <state x="587" y="350" width="368" height="199" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1578252343320" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578252951514">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578250880234" />
-    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1578250880233">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578252951514" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578252951512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578250880233" />
-    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1578250880235">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578252951512" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578252951511">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578250880235" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578252951511" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578252951513">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578252951513" />
     <state width="1398" height="198" key="GridCell.Tab.1.bottom" timestamp="1578250880238">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -287,13 +270,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="198" key="GridCell.Tab.4.right/0.0.1440.900@0.0.1440.900" timestamp="1578250880246" />
+    <state x="458" y="112" key="ImportDialog.Title" timestamp="1578252307672">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="112" key="ImportDialog.Title/0.0.1440.900@0.0.1440.900" timestamp="1578252307672" />
     <state x="342" y="317" key="Rider.ProjectTemplateDialog.Size" timestamp="1578247085614">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="342" y="317" key="Rider.ProjectTemplateDialog.Size/0.23.1440.816@0.23.1440.816" timestamp="1578247085613" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1578251268154">
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2" timestamp="1578252165199">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578251268154" />
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578252165199" />
+    <state x="558" y="248" width="465" height="404" key="svn.repositoryBrowser" timestamp="1578252154990">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="558" y="248" width="465" height="404" key="svn.repositoryBrowser/0.0.1440.900@0.0.1440.900" timestamp="1578252154990" />
+    <state x="553" y="232" key="svn4idea.import.options" timestamp="1578252153049">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="553" y="232" key="svn4idea.import.options/0.0.1440.900@0.0.1440.900" timestamp="1578252153049" />
   </component>
 </project>
