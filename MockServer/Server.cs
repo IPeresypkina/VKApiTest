@@ -59,7 +59,7 @@ namespace MockServer
         {
             switch (request) //выбирает ответ
             {
-                case "/":
+                case "/test":
                     string text = "Hello, world!";
                     SendMessageToClient(text, response);
                     break;

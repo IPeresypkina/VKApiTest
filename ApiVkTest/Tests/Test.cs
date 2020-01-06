@@ -10,7 +10,6 @@ namespace ApiVkTest.Tests
         [Test]
         public void GetUserById()
         {
-
             IUsersRepository userRepository = new UsersRepositoryMock();
             UserService userService = new UserService(userRepository);
             User user = userService.GetUserById("86031446");
@@ -19,11 +18,11 @@ namespace ApiVkTest.Tests
             Assert.AreEqual("Пересыпкина",user.last_name);
             
             userRepository = new UsersRepositoryVk();
-            user = userRepository.GetUserById("86031446");
+            userService = new UserService(userRepository);
+            user = userService.GetUserById("86031446");
             
             Assert.AreEqual("Ирина", user.first_name);
-            Assert.AreEqual("Пересыпкина",user.last_name);
-            
+            Assert.AreEqual("Пересыпкина", user.last_name);
         }
         
         [Test]
@@ -37,7 +36,8 @@ namespace ApiVkTest.Tests
             Assert.AreEqual("ВКонтакте API", group.name);
             
             groupRepository = new GroupsRepositoryMock();
-            group = groupRepository.GetGroupById("1");
+            groupService = new GroupService(groupRepository);
+            group = groupService.GetGroupById("1");
             
             Assert.AreEqual("ВКонтакте API", group.name);
         }

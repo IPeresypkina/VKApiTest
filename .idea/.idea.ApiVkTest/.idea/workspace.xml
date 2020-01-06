@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[feature] tests user and group">
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiVkTest/Services/UserService.cs" afterDir="false" />
+    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[feature] add service">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/MockServer/Server.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiVkTest/ApiVkTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/ApiVkTest.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +20,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MockServer/Tests/MocTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApiVkTest/WebClient/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MockServer/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MockServer/Models/Group.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/obj/project.assets.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MockServer/Server.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApiVkTest/obj/Debug/netcoreapp3.0/ApiVkTest.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/obj/ApiVkTest.csproj.nuget.dgspec.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Model/Group.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Model/User.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,7 +37,11 @@
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryVk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Repositories/IGroupsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApiVkTest/Repositories/IUsersRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MockServer/Tests/MocTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApiVkTest/WebClient/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MockServer/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,21 +53,21 @@
         <option value="$PROJECT_DIR$/MockServer/Models/Group.cs" />
         <option value="$PROJECT_DIR$/MockServer/Program.cs" />
         <option value="$PROJECT_DIR$/MockServer/Repository.cs" />
-        <option value="$PROJECT_DIR$/ApiVkTest/Program.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/IGroupsRepository.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/IUsersRepository.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/WebClient/WebClient.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryVk.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/MockServer/Server.cs" />
-        <option value="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" />
-        <option value="$PROJECT_DIR$/MockServer/Server.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Services/UserServise.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Services/UserService.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" />
+        <option value="$PROJECT_DIR$/ApiVkTest/Program.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" />
+        <option value="$PROJECT_DIR$/MockServer/Server.cs" />
+        <option value="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" />
       </list>
     </option>
   </component>
@@ -162,6 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1578246396904</updated>
       <workItem from="1578246398577" duration="12911000" />
+      <workItem from="1578264559194" duration="327000" />
+      <workItem from="1578307062675" duration="4346000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] add mock serve">
       <created>1578251153257</created>
@@ -198,20 +200,41 @@
       <option name="project" value="LOCAL" />
       <updated>1578260801821</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[feature] add service">
+      <created>1578264792041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578264792041</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feature] add mock serve" />
     <MESSAGE value="[feature] add mock serve and vkapi" />
     <MESSAGE value="[feature] connect client and receive message" />
     <MESSAGE value="[feature] tests user and group" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] tests user and group" />
+    <MESSAGE value="[feature] add service" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] add service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="144" y="79" key="DiffContextDialog" timestamp="1578251259735">
@@ -222,22 +245,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="587" y="350" width="368" height="199" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1578252343320" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578264578802">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578312400265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578264578802" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578264578801">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578312400265" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578312400264">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578264578801" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578264578800">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578312400264" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578312400262">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578264578800" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578264578802">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578312400262" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578312400265">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578264578802" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578312400265" />
     <state width="1398" height="198" key="GridCell.Tab.1.bottom" timestamp="1578264343313">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -310,10 +333,10 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="342" y="317" key="Rider.ProjectTemplateDialog.Size/0.23.1440.816@0.23.1440.816" timestamp="1578247085613" />
-    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2" timestamp="1578260818396">
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2" timestamp="1578264804851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578260818396" />
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578264804851" />
     <state x="558" y="248" width="465" height="404" key="svn.repositoryBrowser" timestamp="1578252154990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
