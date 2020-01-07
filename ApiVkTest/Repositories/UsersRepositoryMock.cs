@@ -6,19 +6,18 @@ namespace Tests.Repositories
 {
     public class UsersRepositoryMock : IUsersRepository
     {
-        private string url = "http://localhost:8080/method/";
-        
+        //private string url = "http://localhost:8080/method/";
+        public string baseURL { get; set; }
         public User GetUserById(string id)
         {
-            string request = $"{url}users/get/{id}";
-            WebClient webHelper = new WebClient();
-            string json = webHelper.SendRequest(request, "GET");
-            return Parse(json);
-        }
-
-        private User Parse(string json)
-        {
-            return JsonConvert.DeserializeObject<User>(json);
+            User user = new User()
+            {
+                id = "86031446",
+                first_name = "Ирина",
+                last_name = "Пересыпкина",
+                is_closed = false
+            };
+            return user;
         }
     }
 }

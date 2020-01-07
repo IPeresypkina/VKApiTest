@@ -6,19 +6,16 @@ namespace Tests.Repositories
 {
     public class GroupsRepositoryMock: IGroupsRepository
     {
-        private string url = "http://localhost:8080/method/";
-        
+        //private string url = "http://localhost:8080/method/";
+        public string baseURL { get; set; }
         public Group GetGroupById(string id)
         {
-            string request = $"{url}groups/getById/{id}";
-            WebClient webHelper = new WebClient();
-            string json = webHelper.SendRequest(request, "GET");
-            return Parse(json);
-        }
-        
-        private Group Parse(string json)
-        {
-            return JsonConvert.DeserializeObject<Group>(json);
+            Group group = new Group()
+            {
+                id = "1",
+                name = "ВКонтакте API"
+            };
+            return group;
         }
     }
 }

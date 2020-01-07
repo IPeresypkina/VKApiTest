@@ -8,6 +8,34 @@ namespace ApiVkTest.Tests
     public class Test
     {
         [Test]
+        public void GetUserFromRepositoryTest()//тестируем репозиторий с помощью мокСервера
+        {
+            IUsersRepository userRepository = new UsersRepositoryVk();
+            userRepository.baseURL = "http://localhost:8080/method/";
+            User user = userRepository.GetUserById("86031446");
+            Assert.AreEqual("Ирина", user.first_name);
+            Assert.AreEqual("Пересыпкина",user.last_name);
+        }
+        [Test]
+        public void GetGroupFromRepositoryTest()
+        {
+            IGroupsRepository groupsRepository = new GroupsRepositoryVk();
+            groupsRepository.baseURL = "http://localhost:8080/method/";
+            Group group = groupsRepository.GetGroupById("1");
+            Assert.AreEqual("ВКонтакте API", group.name);
+        }
+        
+        // [Test]
+        // public void GetUserFromServiceTest()//тестируем репозиторий с помощью мокСервера
+        // {
+        //     IUsersRepository userRepository = new UsersRepositoryVk();
+        //     userRepository.baseURL = "http://localhost:8080/method/";
+        //     User user = userRepository.GetUserById("86031446");
+        //     Assert.AreEqual("Ирина", user.first_name);
+        //     Assert.AreEqual("Пересыпкина",user.last_name);
+        // }
+
+        [Test]
         public void GetUserById()
         {
             IUsersRepository userRepository = new UsersRepositoryMock();
