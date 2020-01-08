@@ -1,3 +1,4 @@
+using System;
 using ApiVkTest.Model;
 using Tests.Repositories;
 
@@ -12,9 +13,18 @@ namespace ApiVkTest.Services
             _usersRepository = usersRepository;
         }
 
-        public User GetUserById(string id)
+        public int GetAge(string id)
         {
-            return _usersRepository.GetUserById(id);
+            User userBD = _usersRepository.GetUserById(id);
+            DateTime enteredDate = DateTime.Parse(userBD.bdate);
+            return CalculateAge(enteredDate);
+        }
+        public static int CalculateAge(DateTime BirthDate)
+        {
+            int YearsPassed = DateTime.Now.Year - BirthDate.Year;
+            if (DateTime.Now.Month < BirthDate.Day || (DateTime.Now.Month == BirthDate.Day && DateTime.Now.Day < BirthDate.Month))
+                YearsPassed--;
+            return YearsPassed;
         }
     }
 }

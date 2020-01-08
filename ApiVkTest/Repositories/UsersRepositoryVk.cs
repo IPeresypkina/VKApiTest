@@ -15,7 +15,7 @@ namespace Tests.Repositories
         
         public User GetUserById(string id)
         {
-            string request = $"{baseURL}users.get?users_ids={id}&access_token={accessToken}&v=5.103";
+            string request = $"{baseURL}users.get?users_ids={id}&fields=bdate&access_token={accessToken}&v=5.103";
             WebClient webHelper = new WebClient();
             string json = webHelper.SendRequest(request, "GET");
             return Parse(json);
@@ -33,6 +33,7 @@ namespace Tests.Repositories
                 user.first_name = userInfo["first_name"].ToString();
                 user.last_name = userInfo["last_name"].ToString();
                 user.is_closed = (bool)userInfo["is_closed"];
+                user.bdate = userInfo["bdate"].ToString();
                 result = user;
             }
             else

@@ -15,6 +15,8 @@ namespace ApiVkTest.Tests
             User user = userRepository.GetUserById("86031446");
             Assert.AreEqual("Ирина", user.first_name);
             Assert.AreEqual("Пересыпкина",user.last_name);
+            Assert.AreEqual("1.6.1998",user.bdate);
+            
         }
         [Test]
         public void GetGroupFromRepositoryTest()
@@ -24,34 +26,34 @@ namespace ApiVkTest.Tests
             Group group = groupsRepository.GetGroupById("1");
             Assert.AreEqual("ВКонтакте API", group.name);
         }
-        
-        // [Test]
-        // public void GetUserFromServiceTest()//тестируем репозиторий с помощью мокСервера
-        // {
-        //     IUsersRepository userRepository = new UsersRepositoryVk();
-        //     userRepository.baseURL = "http://localhost:8080/method/";
-        //     User user = userRepository.GetUserById("86031446");
-        //     Assert.AreEqual("Ирина", user.first_name);
-        //     Assert.AreEqual("Пересыпкина",user.last_name);
-        // }
 
+        
         [Test]
-        public void GetUserById()
+        public void GetUserFromServiceTest()//тестируем сервис с помощью мокРепозитория
         {
             IUsersRepository userRepository = new UsersRepositoryMock();
             UserService userService = new UserService(userRepository);
-            User user = userService.GetUserById("86031446");
-            
-            Assert.AreEqual("Ирина", user.first_name);
-            Assert.AreEqual("Пересыпкина",user.last_name);
-            
-            userRepository = new UsersRepositoryVk();
-            userService = new UserService(userRepository);
-            user = userService.GetUserById("86031446");
-            
-            Assert.AreEqual("Ирина", user.first_name);
-            Assert.AreEqual("Пересыпкина", user.last_name);
+            int age = userService.GetAge("86031446");
+            Assert.AreEqual(21, age);
         }
+
+        // [Test]
+        // public void GetUserById()
+        // {
+        //     IUsersRepository userRepository = new UsersRepositoryMock();
+        //     UserService userService = new UserService(userRepository);
+        //     User user = userService.GetUserById("86031446");
+        //     
+        //     Assert.AreEqual("Ирина", user.first_name);
+        //     Assert.AreEqual("Пересыпкина",user.last_name);
+        //     
+        //     userRepository = new UsersRepositoryVk();
+        //     userService = new UserService(userRepository);
+        //     user = userService.GetUserById("86031446");
+        //     
+        //     Assert.AreEqual("Ирина", user.first_name);
+        //     Assert.AreEqual("Пересыпкина", user.last_name);
+        // }
         
         [Test]
         public void GetGroupById()

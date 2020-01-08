@@ -70,7 +70,8 @@ namespace MockServer
                         id = "86031446",
                         first_name = "Ирина",
                         last_name = "Пересыпкина",
-                        is_closed = false
+                        is_closed = false,
+                        bdate = "1.6.1998"
                     };
                     SendMessageToClient(user,response);
                     break;
