@@ -79,8 +79,9 @@ namespace MockServer
                 case "/method/groups.getById?group_id=1&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103":
                     Group group = new Group()
                     {
-                        id = "1",
-                        name = "ВКонтакте API"
+                        id = "maxkorzh",
+                        name = "Макс Корж",
+                        members_count = 1409669
                     };
                     SendMessageToClient(group,response);
                     break;

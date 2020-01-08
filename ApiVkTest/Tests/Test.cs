@@ -36,6 +36,16 @@ namespace ApiVkTest.Tests
             int age = userService.GetAge("86031446");
             Assert.AreEqual(21, age);
         }
+        
+        [Test]
+        public void GetGropFromServiceTest()//тестируем сервис с помощью мокРепозитория
+        {
+            IGroupsRepository groupsRepository = new GroupsRepositoryMock();
+            GroupService groupService = new GroupService(groupsRepository);
+            string popular = groupService.GetPopularGroup("maxkorzh");
+            Assert.AreEqual("сверх популярна", popular);
+        }
+        
 
         // [Test]
         // public void GetUserById()
@@ -55,21 +65,20 @@ namespace ApiVkTest.Tests
         //     Assert.AreEqual("Пересыпкина", user.last_name);
         // }
         
-        [Test]
-        public void GetGroupById()
-        {
-            
-            IGroupsRepository groupRepository = new GroupsRepositoryVk();
-            GroupService groupService = new GroupService(groupRepository);
-            Group group = groupService.GetGroupById("1");
-            
-            Assert.AreEqual("ВКонтакте API", group.name);
-            
-            groupRepository = new GroupsRepositoryMock();
-            groupService = new GroupService(groupRepository);
-            group = groupService.GetGroupById("1");
-            
-            Assert.AreEqual("ВКонтакте API", group.name);
-        }
+        // [Test]
+        // public void GetGroupById()
+        // {
+        //     IGroupsRepository groupRepository = new GroupsRepositoryVk();
+        //     GroupService groupService = new GroupService(groupRepository);
+        //     Group group = groupService.GetGroupById("1");
+        //     
+        //     Assert.AreEqual("ВКонтакте API", group.name);
+        //     
+        //     groupRepository = new GroupsRepositoryMock();
+        //     groupService = new GroupService(groupRepository);
+        //     group = groupService.GetGroupById("1");
+        //     
+        //     Assert.AreEqual("ВКонтакте API", group.name);
+        // }
     }
 }

@@ -12,9 +12,17 @@ namespace ApiVkTest.Services
             _groupsRepository = groupsRepository;
         }
 
-        public Group GetGroupById(string id)
+        public string GetPopularGroup(string id)
         {
-            return _groupsRepository.GetGroupById(id);
+            Group popularGroup = _groupsRepository.GetGroupById(id);
+            string popular;
+            if (popularGroup.members_count < 100000)
+                popular = "не популярна";
+            else if (popularGroup.members_count < 1000000)
+                popular = "популярна";
+            else popular = "сверх популярна";
+            return popular;
         }
+        
     }
 }

@@ -12,8 +12,9 @@ namespace Tests.Repositories
         {
             Group group = new Group()
             {
-                id = "1",
-                name = "ВКонтакте API"
+                id = "maxkorzh",
+                name = "Макс Корж",
+                members_count = 1409669
             };
             return group;
         }

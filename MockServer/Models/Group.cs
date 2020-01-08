@@ -4,5 +4,6 @@ namespace MockServer.Models
     {
         public string id { get; set; }
         public string name { get; set; }
+        public int members_count { get; set; }
     }
 }

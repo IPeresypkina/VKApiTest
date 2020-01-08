@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[fix] change test repository">
+    <list default="true" id="99ba5243-95d0-4034-95cd-446f8f37ee04" name="Default Changelist" comment="[feature] add test service user age">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApiVkTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Model/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Model/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiVkTest/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiVkTest/Model/Group.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Model/Group.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MockServer/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockServer/Models/Group.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Models/Group.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MockServer/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MockServer/Server.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,27 +55,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ApiVkTest/Model/Message.cs" />
-        <option value="$PROJECT_DIR$/ApiVkTest/Model/Group.cs" />
-        <option value="$PROJECT_DIR$/MockServer/Models/Group.cs" />
         <option value="$PROJECT_DIR$/MockServer/Program.cs" />
         <option value="$PROJECT_DIR$/MockServer/Repository.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/MockServer/Server.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Services/UserServise.cs" />
-        <option value="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Program.cs" />
         <option value="$PROJECT_DIR$/MockServer/Tests/MocTest.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/IGroupsRepository.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/IUsersRepository.cs" />
-        <option value="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/WebClient/WebClient.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryVk.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryMock.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Model/User.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Repositories/UsersRepositoryVk.cs" />
-        <option value="$PROJECT_DIR$/MockServer/Server.cs" />
         <option value="$PROJECT_DIR$/MockServer/Models/User.cs" />
-        <option value="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" />
         <option value="$PROJECT_DIR$/ApiVkTest/Services/UserService.cs" />
+        <option value="$PROJECT_DIR$/ApiVkTest/Model/Group.cs" />
+        <option value="$PROJECT_DIR$/MockServer/Models/Group.cs" />
+        <option value="$PROJECT_DIR$/MockServer/Server.cs" />
+        <option value="$PROJECT_DIR$/ApiVkTest/Repositories/GroupsRepositoryMock.cs" />
+        <option value="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" />
+        <option value="$PROJECT_DIR$/ApiVkTest/Tests/Test.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +173,7 @@
       <workItem from="1578264559194" duration="327000" />
       <workItem from="1578307062675" duration="4346000" />
       <workItem from="1578317144808" duration="867000" />
-      <workItem from="1578395053053" duration="14250000" />
+      <workItem from="1578395053053" duration="15862000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] add mock serve">
       <created>1578251153257</created>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578411342686</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[feature] add test service user age">
+      <created>1578474387942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578474387942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +267,8 @@
     <MESSAGE value="[feature] add service" />
     <MESSAGE value="[fix] change entry point main" />
     <MESSAGE value="[fix] change test repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] change test repository" />
+    <MESSAGE value="[feature] add test service user age" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] add test service user age" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1183" height="466" key="DebuggerActiveHint" timestamp="1578411051231">
@@ -276,86 +283,86 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="587" y="350" width="368" height="199" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1578252343320" />
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1578474044402">
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1578477624608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578474044402" />
-    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1578474044401">
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578477624608" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1578477624606">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578474044401" />
-    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1578474044401">
+    <state width="1398" height="203" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578477624606" />
+    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1578477624605">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578474044401" />
-    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1578474044402">
+    <state width="1398" height="203" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578477624605" />
+    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1578477624607">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578474044402" />
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom" timestamp="1578474047131">
+    <state width="1398" height="203" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578477624607" />
+    <state width="1398" height="203" key="GridCell.Tab.1.bottom" timestamp="1578477627402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578474047131" />
-    <state width="1398" height="294" key="GridCell.Tab.1.center" timestamp="1578474047129">
+    <state width="1398" height="203" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578477627402" />
+    <state width="1398" height="203" key="GridCell.Tab.1.center" timestamp="1578477627401">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578474047129" />
-    <state width="1398" height="294" key="GridCell.Tab.1.left" timestamp="1578474047129">
+    <state width="1398" height="203" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578477627401" />
+    <state width="1398" height="203" key="GridCell.Tab.1.left" timestamp="1578477627400">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578474047129" />
-    <state width="1398" height="294" key="GridCell.Tab.1.right" timestamp="1578474047130">
+    <state width="1398" height="203" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578477627400" />
+    <state width="1398" height="203" key="GridCell.Tab.1.right" timestamp="1578477627402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578474047130" />
-    <state width="1398" height="294" key="GridCell.Tab.2.bottom" timestamp="1578474044232">
+    <state width="1398" height="203" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578477627402" />
+    <state width="1398" height="203" key="GridCell.Tab.2.bottom" timestamp="1578477624415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578474044232" />
-    <state width="1398" height="294" key="GridCell.Tab.2.center" timestamp="1578474044231">
+    <state width="1398" height="203" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578477624415" />
+    <state width="1398" height="203" key="GridCell.Tab.2.center" timestamp="1578477624414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1578474044231" />
-    <state width="1398" height="294" key="GridCell.Tab.2.left" timestamp="1578474044230">
+    <state width="1398" height="203" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1578477624414" />
+    <state width="1398" height="203" key="GridCell.Tab.2.left" timestamp="1578477624414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1578474044230" />
-    <state width="1398" height="294" key="GridCell.Tab.2.right" timestamp="1578474044231">
+    <state width="1398" height="203" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1578477624414" />
+    <state width="1398" height="203" key="GridCell.Tab.2.right" timestamp="1578477624415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1578474044231" />
-    <state width="1398" height="294" key="GridCell.Tab.3.bottom" timestamp="1578474044235">
+    <state width="1398" height="203" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1578477624415" />
+    <state width="1398" height="203" key="GridCell.Tab.3.bottom" timestamp="1578477624418">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578474044235" />
-    <state width="1398" height="294" key="GridCell.Tab.3.center" timestamp="1578474044233">
+    <state width="1398" height="203" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578477624418" />
+    <state width="1398" height="203" key="GridCell.Tab.3.center" timestamp="1578477624416">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1578474044233" />
-    <state width="1398" height="294" key="GridCell.Tab.3.left" timestamp="1578474044233">
+    <state width="1398" height="203" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1578477624416" />
+    <state width="1398" height="203" key="GridCell.Tab.3.left" timestamp="1578477624416">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1578474044233" />
-    <state width="1398" height="294" key="GridCell.Tab.3.right" timestamp="1578474044234">
+    <state width="1398" height="203" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1578477624416" />
+    <state width="1398" height="203" key="GridCell.Tab.3.right" timestamp="1578477624417">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1578474044234" />
-    <state width="1398" height="294" key="GridCell.Tab.4.bottom" timestamp="1578474044237">
+    <state width="1398" height="203" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1578477624417" />
+    <state width="1398" height="203" key="GridCell.Tab.4.bottom" timestamp="1578477624420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.4.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578474044237" />
-    <state width="1398" height="294" key="GridCell.Tab.4.center" timestamp="1578474044236">
+    <state width="1398" height="203" key="GridCell.Tab.4.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578477624420" />
+    <state width="1398" height="203" key="GridCell.Tab.4.center" timestamp="1578477624419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.4.center/0.0.1440.900@0.0.1440.900" timestamp="1578474044236" />
-    <state width="1398" height="294" key="GridCell.Tab.4.left" timestamp="1578474044235">
+    <state width="1398" height="203" key="GridCell.Tab.4.center/0.0.1440.900@0.0.1440.900" timestamp="1578477624419" />
+    <state width="1398" height="203" key="GridCell.Tab.4.left" timestamp="1578477624418">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.4.left/0.0.1440.900@0.0.1440.900" timestamp="1578474044235" />
-    <state width="1398" height="294" key="GridCell.Tab.4.right" timestamp="1578474044237">
+    <state width="1398" height="203" key="GridCell.Tab.4.left/0.0.1440.900@0.0.1440.900" timestamp="1578477624418" />
+    <state width="1398" height="203" key="GridCell.Tab.4.right" timestamp="1578477624419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.4.right/0.0.1440.900@0.0.1440.900" timestamp="1578474044237" />
+    <state width="1398" height="203" key="GridCell.Tab.4.right/0.0.1440.900@0.0.1440.900" timestamp="1578477624419" />
     <state x="458" y="112" key="ImportDialog.Title" timestamp="1578252307672">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -364,11 +371,15 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="342" y="317" key="Rider.ProjectTemplateDialog.Size/0.23.1440.816@0.23.1440.816" timestamp="1578247085613" />
-    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2" timestamp="1578411359552">
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2" timestamp="1578474401679">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578411359552" />
+    <state x="128" y="159" width="999" height="520" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578474401679" />
     <state x="128" y="168" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1578317346902" />
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1578477664343">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1578477664343" />
     <state x="558" y="248" width="465" height="404" key="svn.repositoryBrowser" timestamp="1578252154990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -393,6 +404,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/ApiVkTest/Services/GroupService.cs" initialLine="16">
+            <startOffsets>
+              <option value="377" />
+            </startOffsets>
+            <endOffsets>
+              <option value="433" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
