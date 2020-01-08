@@ -44,26 +44,29 @@ namespace ApiVkTest.Tests
             GroupService groupService = new GroupService(groupsRepository);
             string popular = groupService.GetPopularGroup("maxkorzh");
             Assert.AreEqual("сверх популярна", popular);
+            
+            popular = groupService.GetPopularGroup("kladovayacomiksovv");
+            Assert.AreEqual("популярна", popular);
+            
+            popular = groupService.GetPopularGroup("wolfsbrewery");
+            Assert.AreEqual("не популярна", popular);
         }
         
 
-        // [Test]
-        // public void GetUserById()
-        // {
-        //     IUsersRepository userRepository = new UsersRepositoryMock();
-        //     UserService userService = new UserService(userRepository);
-        //     User user = userService.GetUserById("86031446");
-        //     
-        //     Assert.AreEqual("Ирина", user.first_name);
-        //     Assert.AreEqual("Пересыпкина",user.last_name);
-        //     
-        //     userRepository = new UsersRepositoryVk();
-        //     userService = new UserService(userRepository);
-        //     user = userService.GetUserById("86031446");
-        //     
-        //     Assert.AreEqual("Ирина", user.first_name);
-        //     Assert.AreEqual("Пересыпкина", user.last_name);
-        // }
+        [Test]
+        public void GetUserById()
+        {
+            IUsersRepository userRepository = new UsersRepositoryVk();
+            userRepository.baseURL = "https://api.vk.com/method/";
+            UserService userService = new UserService(userRepository);
+            int age = userService.GetAge("86031446");
+            Assert.AreEqual(21, age);
+            
+            // User user = userRepository.GetUserById("86031446");
+            // Assert.AreEqual("Ирина", user.first_name);
+            // Assert.AreEqual("Пересыпкина",user.last_name);
+            // Assert.AreEqual("1.6.1998",user.bdate);
+        }
         
         // [Test]
         // public void GetGroupById()
