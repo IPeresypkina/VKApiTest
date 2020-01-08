@@ -14,7 +14,7 @@ namespace Tests.Repositories
         public string baseURL { get; set; }
         public Group GetGroupById(string id)
         {
-            string request = $"{baseURL}groups.getById?group_id={id}&access_token={accessToken}&v=5.103";
+            string request = $"{baseURL}groups.getById?group_id={id}&fields=members_count&access_token={accessToken}&v=5.103";
             WebClient webHelper = new WebClient();
             string json = webHelper.SendRequest(request, "GET");
             return Parse(json);
@@ -30,6 +30,7 @@ namespace Tests.Repositories
                 Group group = new Group();
                 group.id = groupInfo["id"].ToString();
                 group.name = groupInfo["name"].ToString();
+                group.members_count = (int)groupInfo["members_count"];
                 result = group;
             }
             else

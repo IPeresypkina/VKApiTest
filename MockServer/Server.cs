@@ -64,7 +64,7 @@ namespace MockServer
                     SendMessageToClient(text, response);
                     break;
                     //http://localhost:8080/method/users.get?users_ids=86031446&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103
-                case "/method/users.get?users_ids=86031446&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103":
+                case "/method/users.get?users_ids=86031446&fields=bdate&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103":
                     User user = new User()
                     {
                         id = "86031446",
@@ -75,8 +75,8 @@ namespace MockServer
                     };
                     SendMessageToClient(user,response);
                     break;
-                ///method/groups.getById?group_id=1&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103
-                case "/method/groups.getById?group_id=1&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103":
+                    ///method/groups.getById?group_id=maxkorzh&fields=members_count&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103
+                case "/method/groups.getById?group_id=maxkorzh&fields=members_count&access_token=f9ec652d9ad60f44ad77ae7b2533583702978c976c77dff5de9efad7d53056e23ec1010ed7d7b32ba25ce&v=5.103":
                     Group group = new Group()
                     {
                         id = "maxkorzh",

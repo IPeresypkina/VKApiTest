@@ -13,9 +13,11 @@ namespace ApiVkTest.Tests
             IUsersRepository userRepository = new UsersRepositoryVk();
             userRepository.baseURL = "http://localhost:8080/method/";
             User user = userRepository.GetUserById("86031446");
+            Assert.AreEqual("86031446", user.id);
             Assert.AreEqual("Ирина", user.first_name);
             Assert.AreEqual("Пересыпкина",user.last_name);
             Assert.AreEqual("1.6.1998",user.bdate);
+            Assert.AreEqual(false,user.is_closed);
             
         }
         [Test]
@@ -23,8 +25,10 @@ namespace ApiVkTest.Tests
         {
             IGroupsRepository groupsRepository = new GroupsRepositoryVk();
             groupsRepository.baseURL = "http://localhost:8080/method/";
-            Group group = groupsRepository.GetGroupById("1");
-            Assert.AreEqual("ВКонтакте API", group.name);
+            Group group = groupsRepository.GetGroupById("maxkorzh");
+            Assert.AreEqual("maxkorzh", group.id);
+            Assert.AreEqual("Макс Корж", group.name);
+            Assert.AreEqual(1409669, group.members_count);
         }
 
         
@@ -68,20 +72,20 @@ namespace ApiVkTest.Tests
             // Assert.AreEqual("1.6.1998",user.bdate);
         }
         
-        // [Test]
-        // public void GetGroupById()
-        // {
-        //     IGroupsRepository groupRepository = new GroupsRepositoryVk();
-        //     GroupService groupService = new GroupService(groupRepository);
-        //     Group group = groupService.GetGroupById("1");
-        //     
-        //     Assert.AreEqual("ВКонтакте API", group.name);
-        //     
-        //     groupRepository = new GroupsRepositoryMock();
-        //     groupService = new GroupService(groupRepository);
-        //     group = groupService.GetGroupById("1");
-        //     
-        //     Assert.AreEqual("ВКонтакте API", group.name);
-        // }
+        [Test]
+        public void GetGroupById()
+        {
+            IGroupsRepository groupsRepository = new GroupsRepositoryVk();
+            groupsRepository.baseURL = "https://api.vk.com/method/";
+            GroupService groupService = new GroupService(groupsRepository);
+            string popular = groupService.GetPopularGroup("maxkorzh");
+            Assert.AreEqual("сверх популярна", popular);
+            
+            popular = groupService.GetPopularGroup("kladovayacomiksovv");
+            Assert.AreEqual("популярна", popular);
+            
+            popular = groupService.GetPopularGroup("wolfsbrewery");
+            Assert.AreEqual("не популярна", popular);
+        }
     }
 }
