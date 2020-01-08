@@ -15,7 +15,7 @@ namespace Tests.Repositories
         
         public User GetUserById(string id)
         {
-            string request = $"{baseURL}users.get?users_ids={id}&fields=bdate&access_token={accessToken}&v=5.103";
+            string request = $"{baseURL}users.get?user_ids={id}&fields=bdate&access_token={accessToken}&v=5.103";
             WebClient webHelper = new WebClient();
             string json = webHelper.SendRequest(request, "GET");
             return Parse(json);
